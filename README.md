@@ -26,7 +26,7 @@ virtualenv
 homebrew (for mac)
 ```
 
-### Installing
+## Installing
 
 A step by step series of examples that tell you have to get a development env running
 
@@ -35,40 +35,40 @@ A step by step series of examples that tell you have to get a development env ru
 2. Then `cd` into the directory with `cd urver`
 
 3. Ensure you have python3 installed on your device if you don't:
-    1. #### Mac
+    1. ## Mac
         1. Install homebrew if you don't have it already. [How to install homebrew](https://www.howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/)
         you can check if you have it already by running `brew help`
         2. Install python3 with the command `brew install python3`
         3. Check that python3 is working by running `python3`
 
-    2. #### Windows
+    2. ## Windows
         1. Download the windows executable installer for Python 3.6.4 at [Python Software Foundation](https://www.python.org/downloads/windows/)
         2. Follow the installation prompt.
         3. Ask google for the rest, if you run into problems, or me
 
 4. Once you sure you've installed python3 on your device, you need to install `virtualenv`
-    1. #### Mac
+    1. ## Mac
        1. Run the command `pip3 install virtualenv`
-    2. #### Windows
+    2. ## Windows
        1. Not to sure. Google how to install pip on windows. (update) pip should come installed with python
        proceed to run the command `pip3 install virtualenv`
 
 5. Create a virtual environment
-    1. #### Mac
+    1. ## Mac
         1. I would suggest you create a directory called `environments` in the parent directory of the `urver` directory
         2. Go to the `environments` directory
         3. Run the command `virtualenv urver`
         4. Then run this command `source urver/bin/activate` your terminal should look like this `(urver)<your-username> $`
         5. Finally navigate to the project directory and run `pip install -r requirements.txt`
-    2.  #### Windows
+    2.  ## Windows
         1. Follow steps 1 - 3 of Mac
         2. Instead of `source urver/bin/activate` you run `source urver\Scripts\activate`
         3. Do step 5 of Mac
 
 6. Run the project
-    1. #### Mac
+    1. ## Mac
         1. Run the command `python3 manage.py migrate && python3 manage.py runserver`
-    2.  #### Windows
+    2.  ## Windows
         1. Run the command `python manage.py migrate && python manage.py runserver`
 
 7. Go to http://127.0.0.1:8000/ on your browser if all goes well you should see page similar to this
